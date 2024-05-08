@@ -1,8 +1,12 @@
 package co.ucentral.universidad.servicios;
 
+import co.ucentral.universidad.config.ModelMapperConf;
 import co.ucentral.universidad.dto.UniversidadDTO;
 import co.ucentral.universidad.entidades.Universidad;
 import co.ucentral.universidad.operaciones.OperacionesUniversidad;
+import co.ucentral.universidad.repositorios.RepoUniversidad;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +16,7 @@ import java.util.List;
 public class ServicioUniversidades implements OperacionesUniversidad {
 
     @Autowired
-    RepoEquipo repoUniversidad;
+    RepoUniversidad repoUniversidad;
 
     @Autowired
     ModelMapper modelMapper;
