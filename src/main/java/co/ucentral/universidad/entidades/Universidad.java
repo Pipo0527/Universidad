@@ -18,18 +18,18 @@ public class Universidad {
     @SequenceGenerator(name = "SEQ_UNIVERSIDAD", sequenceName = "SEQ_UNIVERSIDAD", allocationSize = 1)
 
 
+    @Column(name = "EQU_CODIGO", nullable = false)
+    private long codigo;
+
     @Column(name = "EQU_NOMBRE", nullable = false)
     private String nombre;
 
-    @Column(name = "EQU_UNIFORME", nullable = false)
-    private String uniforme;
-
-    @Column(name = "EQU_TECNICO", nullable = false)
-    private String tecnico;
-
     @Column(name = "EQU_DIRECCION", nullable = false)
     private String direccion;
-}
-public class Universidad {
 
+    @Column(name = "EQU_TELEFONO", nullable = false)
+    private int telefono;
+
+    @Column(name = "EQU_CORREO", nullable = false)
+    private long correo;
 }
